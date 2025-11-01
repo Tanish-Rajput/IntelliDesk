@@ -1,1 +1,1 @@
-from app.fast_api import app
+from fast_api import app
