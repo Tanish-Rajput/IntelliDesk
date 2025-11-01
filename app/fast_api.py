@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from app.routers import data_fetch_and_store, uploaded_pdf, main
+from routers import data_fetch_and_store, uploaded_pdf, main
 from typing import Dict
 import time
 import logging
