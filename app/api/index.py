@@ -1,0 +1,1 @@
+from app.fast_api import app
