@@ -52,16 +52,6 @@ async def http_exception_handler(request: Request, exc: HTTPException):
         }
     )
 
-# Startup event
-@app.on_event("startup")
-async def startup_event():
-    logger.info("Application starting up...")
-
-# Shutdown event
-@app.on_event("shutdown")
-async def shutdown_event():
-    logger.info("Application shutting down...")
-
 # Health check endpoint
 @app.get("/health")
 async def health_check() -> Dict[str, str]:
